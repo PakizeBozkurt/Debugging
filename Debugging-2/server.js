@@ -35,6 +35,6 @@ app.get("/quotes/search", function (request, response) {
   response.send(result);
 });
 
-const listener = app.listen(port, function() {
-    console.log("Your app is listening on port " + listener.address().port);
+const listener = app.listen(port, function () {
+  console.log("Your app is listening on port " + listener.address().port);
 });
