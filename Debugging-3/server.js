@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 
-
 const port = 4444;
 
 const quotes = require("./quotes.json");
