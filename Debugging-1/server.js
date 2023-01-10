@@ -15,11 +15,12 @@ const quotes = require("./quotes.json");
 app.get("/", function(request, response) {
   response.send("Hello, do /quotes and /quotes/random work?");
 }
-
+// All quotes 
 ,app.get("/quotes", function(request, response){
   response.json(quotes)
 }))
 
+//Specific quotes
 app.get("/quotes/random",function(request,response){
 response.json(quotes.pickFromArray)});
 
