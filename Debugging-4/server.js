@@ -12,10 +12,13 @@ app.get("/", function (request, response) {
   );
 });
 
+// Get all quotes.
 app.get("/quotes", function (request, response) {
   response.send(quotes);
 });
 
+
+//Get random quotes.
 app.get("/quotes/random", function (request, response) {
   response.send(lodash.sample(quotes));
 });
