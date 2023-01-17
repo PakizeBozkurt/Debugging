@@ -24,7 +24,7 @@ app.get("/quotes/:id", function (request, response) {
   }
 });
 
-//search by a term
+//Search by a term
 function search(word) {
   return quotes.filter((quote) => quote.quote.includes(word));
 }
